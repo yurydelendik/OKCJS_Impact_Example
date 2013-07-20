@@ -44,11 +44,19 @@
 			display: block;
 		}
 	}
+
+	.gamepad[data-debug] > div {
+		border: 1px solid red;
+	}
+	.gamepad[data-debug] > div:hover {
+		background-color: rgba(0, 255, 0, 0.2);
+	}
 	</style>
 </head>
 <body>
 	<canvas id="canvas"></canvas>
 
 	<div id="rotate">Rotate screen</canvas>
+	<script src="lib/game/gamepad.js"></script>
 </body>
 </html>
