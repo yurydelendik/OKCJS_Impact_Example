@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>Impact Game</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
 	<style type="text/css">
 		html,body {
 			background-color: #333;
@@ -21,11 +23,32 @@
 			margin: auto;
 		}
 	</style>
-
 	<script type="text/javascript" src="lib/impact/impact.js"></script>
 	<script type="text/javascript" src="lib/game/main.js"></script>
+
+	<style>
+	#rotate {
+		display: none;
+	}
+
+	@media all and (orientation: portrait) {
+		#canvas {
+			display: none;
+		}
+		#rotate {
+		  position: fixed;
+		  left: 0;
+		  right: 0;
+		  top: 0;
+		  bottom: 0;
+			display: block;
+		}
+	}
+	</style>
 </head>
 <body>
 	<canvas id="canvas"></canvas>
+
+	<div id="rotate">Rotate screen</canvas>
 </body>
 </html>
