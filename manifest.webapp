@@ -1,0 +1,13 @@
+{
+  "name": "Lets go to OKCJS",
+  "description": "Impact.js Game Example",
+  "launch_path": "/index.html",
+  "version": "1.0",
+  "orientation": "landscape",
+  "icons": {
+    "128": "/icon-128.png"
+  },
+  "developer": {
+    "name": "OKC.js"
+  }
+}
